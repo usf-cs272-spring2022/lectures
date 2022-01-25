@@ -1,2 +1,3 @@
-# lectures
-CS 272 Software Development • Spring 2022
+# CS 272 Lecture Code
+
+Lecture code for CS 272 Software Development.
