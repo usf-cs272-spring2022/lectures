@@ -1,4 +1,5 @@
 package edu.usfca.cs272;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -16,8 +17,8 @@ public class GadgetSortDemo {
 	// What should be the type of parameter? List? Set? Collection?
 
 	/**
-	 * Able to print to console any {@link Iterable} of {@link Gadget} objects. Used
-	 * to debug.
+	 * Able to print to console any {@link Iterable} of {@link Gadget} objects.
+	 * Used to debug.
 	 *
 	 * @param gadgets the iterable collection to be printed to the console
 	 */
