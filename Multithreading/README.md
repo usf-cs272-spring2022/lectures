@@ -7,13 +7,13 @@ These demos illustrate basic concepts related to multithreading.
 
 The following lecture slides and archived recordings may be useful:
 
-  - [Multithreading](https://docs.google.com/presentation/d/e/2PACX-1vSdp9XCSHSyPd_uRErfIgL1TIV0kd83eHXbDqq3DaSGrHcMZ77iKzsGO9_3XkRDG0y7YKFErwKDHrH4/pub?start=false&loop=false&delayms=3000) ([Video](https://drive.google.com/file/d/1bDx_QfV8uXgxBnMuGW1BifaOkcHuVsxU/view?usp=sharing))
-  - [Thread Lifecycle](https://docs.google.com/presentation/d/e/2PACX-1vST58GQ2KwGV5U4iIp-y03mXwLwlGWT7ndYF3NsByv6sZfWZQw37RXlHM8UxtaohwmPD1zaOXM9r0gF/pub?start=false&loop=false&delayms=3000) ([Video](https://drive.google.com/file/d/19WIE-aE_n2okfI-Evk7OMEtCUvzaCSwT/view?usp=sharing))
-  - [Liveness](https://docs.google.com/presentation/d/e/2PACX-1vQIQ-WWui5xGdFYl6tR_dE5hd9wLCEA4IRXkFA5lMrNxPqhOr0se3Ns3jw7LKtV28yiXPXQNBjxVvdG/pub?start=false&loop=false&delayms=3000) ([Video](https://drive.google.com/file/d/1ZoPqrdm4e2exLo9djFJcoLKBRwNMOEII/view?usp=sharing))
+  - [Multithreading](https://docs.google.com/presentation/d/e/2PACX-1vQyqZEpYY9CZbQXQ6AGgWfmp3O1Er8ROx6Vh7zIURfG6Xrp6NOVtNO23YN26LTvlYljAKlO-X67XRQB/pub?start=false&loop=false&delayms=3000) ([Video](https://drive.google.com/file/d/1bDx_QfV8uXgxBnMuGW1BifaOkcHuVsxU/view?usp=sharing))
+  - [Thread Lifecycle](https://docs.google.com/presentation/d/e/2PACX-1vQTx2eOpOXS-BeVLcWFvH5RtdH-Whg__yGVR1A6ygG2jB6SvjQP6IKno3trNT520Lvzip_UbKWp3BTS/pub?start=false&loop=false&delayms=3000) ([Video](https://drive.google.com/file/d/19WIE-aE_n2okfI-Evk7OMEtCUvzaCSwT/view?usp=sharing))
+  - [Liveness](https://docs.google.com/presentation/d/e/2PACX-1vQX0l_EFmG_CzaQXOG2_UiqEuWGN8lgyULSD3RKCnC6f_a5ivL9G7hbgRFPVkmmQASLLboVOMQEKVdg/pub?start=false&loop=false&delayms=3000) ([Video](https://drive.google.com/file/d/1ZoPqrdm4e2exLo9djFJcoLKBRwNMOEII/view?usp=sharing))
 
 The following archived recordings of the lecture code may be useful:
 
-  - [ThreadStateDemo](https://github.com/usf-cs272-fall2021/lectures/blob/main/Multithreading/src/main/java/ThreadStateDemo.java)
+  - [ThreadStateDemo](https://drive.google.com/file/d/1ddBJ9YG-xYORgvGbVIKz3z0tj-89n1T6/view?usp=sharing)
   - [RandomArrayTotal](https://drive.google.com/file/d/12aYTi2LQW3W-8GYG-G1A-Febu9Wlof7c/view?usp=sharing)
   - [BoundedBuffer](https://drive.google.com/file/d/1e20Tr6fUSVmxRe6O4B_l7Ynx3uEBigXC/view?usp=sharing)
 
