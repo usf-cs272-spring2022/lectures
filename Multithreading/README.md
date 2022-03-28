@@ -31,7 +31,7 @@ The following resources from the [Java API](https://www.cs.usfca.edu/~cs212/java
   - [Runnable](https://www.cs.usfca.edu/~cs212/javadoc/api/java.base/java/lang/Runnable.html)
   - [Thread](https://www.cs.usfca.edu/~cs212/javadoc/api/java.base/java/lang/Thread.html)
 
-The following resources from the [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se16/html/index.html) may be useful:
+The following resources from the [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se17/html/index.html) may be useful:
 
   - [Synchronized Methods](https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html#jls-8.4.3.6)
   - [Synchronized Statement](https://docs.oracle.com/javase/specs/jls/se17/html/jls-14.html#jls-14.19)
