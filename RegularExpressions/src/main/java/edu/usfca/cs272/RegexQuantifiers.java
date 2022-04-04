@@ -18,6 +18,9 @@ public class RegexQuantifiers extends RegexHelper {
 		String text = "aardvark";
 		String regex;
 
+		// TODO: Ask class: what is the first match?
+		// TODO: How many matches are there?
+
 		/*
 		 * Basic greedy quantifiers.
 		 */
