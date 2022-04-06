@@ -13,8 +13,8 @@ public class RegexGroups {
 	/*
 	 * TODO: First write regex in tool, then show Java code.
 	 *
-	 *    Start: https://regex101.com/r/Dusf9V/1
-	 * Finished: https://regex101.com/r/2F5Rom/1
+	 *    Start: https://regex101.com/r/Dusf9V/
+	 * Finished: https://regex101.com/r/2F5Rom/
 	 */
 
 	/**
@@ -33,8 +33,8 @@ public class RegexGroups {
 
 		// A regular expression to demonstrate how to extract different groups.
 		// (?i)(.+)@(.+\.(.+))
-		// (?i)(\w+)@(\w+\.([.\w]+))
-		String regex = "(?i)(\\w+)@(\\w+\\.([.\\w]+))";
+		// (?i)(\w+)@([.\w]+\.([\w]+))
+		String regex = "(?i)(\\w+)@([.\\w]+\\.([\\w]+))";
 
 		/*
 		 * Notes: Group 0 is the entire match.

@@ -36,6 +36,26 @@ public class RegexWordParsing extends RegexHelper {
 		showMatches(text, regex);
 		console.println();
 
+		// TODO: How to match words using boundaries?
+
+		// Sally Sue sells 76 sea-shells, by   the sea_shore.
+		// 0000000000000000000000000000000000000000000000000_
+		// Note: Does not work; too greedy.
+		regex = "\\b.+\\b";
+		console.println("Words (Using Bounaries, Greedy): " + regex);
+		showMatches(text, regex);
+		console.println();
+
+		// Sally Sue sells 76 sea-shells, by   the sea_shore.
+		// 0000000000000000000000000000000000000000000000000_
+		// Note: Does not work; matching spaces and symbols.
+		regex = "\\b.+?\\b";
+		console.println("Words (Using Boundaries, Reluctant): " + regex);
+		showMatches(text, regex);
+		console.println();
+
+		// TODO: Use \w word character class instead.
+
 		// Sally Sue sells 76 sea-shells, by   the sea_shore.
 		// 00000_111_22222_33_444_555555__66___777_888888888_
 		// Note: Matches do not include spaces or punctuation.
@@ -62,8 +82,7 @@ public class RegexWordParsing extends RegexHelper {
 
 		// Sally Sue sells 76 sea-shells, by   the sea_shore.
 		// 00000_111_22222_33_44444444444_55___666_7777777777
-		// Note: Unlike before, the simpler case (without \b) is different. It
-		// includes punctuation.
+		// Note: The simpler case (without \b) includes punctuation.
 		regex = "\\S+";
 		console.println("Words (With Symbol): " + regex);
 		showMatches(text, regex);
@@ -83,5 +102,9 @@ public class RegexWordParsing extends RegexHelper {
 		regex = "\\b\\S*e\\S*\\b";
 		console.println("Words that contain an e: " + regex);
 		showMatches(text, regex);
+
+		// Note: try not to match greedy vs reluctant quantifiers in same regex
+		// Note: try to be more specific with classes and use greedy quantifiers
+		// over excessively using reluctant quantifiers
 	}
 }

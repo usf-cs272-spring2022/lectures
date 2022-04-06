@@ -49,7 +49,7 @@ public class RegexHelper {
 	 */
 	public static void printMatches(String text, String regex) {
 		var matches = getMatches(text, regex);
-		console.printf("%10s -> %2d matches: %s %n", replaceSymbols(regex),
+		console.printf("%12s -> %2d matches: %s %n", replaceSymbols(regex),
 				matches.size(), matches);
 	}
 
