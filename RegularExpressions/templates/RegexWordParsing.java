@@ -9,6 +9,12 @@ public class RegexWordParsing extends RegexHelper {
 		console.println(RegexHelper.sample);
 		console.println();
 
+		// TODO: What is the (first, last) match?
+		// e.g. "Sally, shore"
+
+		// The character class \b matches a "word boundary"
+		// e.g. caused by a non-word character or start or end of String
+
 		regex = "\\b\\w";
 		console.println("Regex: " + regex);
 		showMatches(text, regex);
