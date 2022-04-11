@@ -32,7 +32,7 @@ public class UrlFetcher {
 	 * @return a map with the headers and content
 	 * @throws IOException if unable to fetch headers and content
 	 */
-	public static Map<String, List<String>> fetchURL(URL url) throws IOException {
+	public static Map<String, List<String>> fetchUrl(URL url) throws IOException {
 		// used to store all headers and content
 		Map<String, List<String>> results = new HashMap<>();
 
@@ -67,21 +67,21 @@ public class UrlFetcher {
 	}
 
 	/**
-	 * See {@link #fetchURL(URL)} for details.
+	 * See {@link #fetchUrl(URL)} for details.
 	 *
 	 * @param url the url to fetch
 	 * @return a map with the headers and content
 	 * @throws MalformedURLException if unable to convert String to URL
 	 * @throws IOException if unable to fetch headers and content
 	 *
-	 * @see #fetchURL(URL)
+	 * @see #fetchUrl(URL)
 	 */
-	public static Map<String, List<String>> fetchURL(String url) throws MalformedURLException, IOException {
-		return fetchURL(new URL(url));
+	public static Map<String, List<String>> fetchUrl(String url) throws MalformedURLException, IOException {
+		return fetchUrl(new URL(url));
 	}
 
 	/**
-	 * Demonstrates the {@link #fetchURL(URL)} method.
+	 * Demonstrates the {@link #fetchUrl(URL)} method.
 	 *
 	 * @param args unused
 	 * @throws Exception if unable to fetch url
@@ -97,7 +97,7 @@ public class UrlFetcher {
 		for (String url : urls) {
 			System.out.println(url);
 
-			var results = fetchURL(url);
+			var results = fetchUrl(url);
 
 			for (var entry : results.entrySet()) {
 				System.out.println(entry.getKey() + ": " + entry.getValue());
