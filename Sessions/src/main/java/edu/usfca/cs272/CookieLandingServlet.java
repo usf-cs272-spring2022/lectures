@@ -1,12 +1,14 @@
 package edu.usfca.cs272;
 
+import static jakarta.servlet.http.HttpServletResponse.SC_OK;
+import static java.nio.charset.StandardCharsets.UTF_8;
+import static java.time.format.DateTimeFormatter.ISO_DATE_TIME;
+
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -51,7 +53,7 @@ public class CookieLandingServlet extends HttpServlet {
 		values.put("title", TITLE);
 		values.put("url", request.getRequestURL().toString());
 		values.put("path", request.getRequestURI());
-		values.put("timestamp", LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME));
+		values.put("timestamp", LocalDateTime.now().format(ISO_DATE_TIME));
 		values.put("thread", Thread.currentThread().getName());
 
 		// configure the form info
@@ -59,12 +61,12 @@ public class CookieLandingServlet extends HttpServlet {
 		values.put("action", "/visits");
 
 		// generate html
-		String template = Files.readString(TEMPLATE_PATH, StandardCharsets.UTF_8);
+		String template = Files.readString(TEMPLATE_PATH, UTF_8);
 		StringSubstitutor replacer = new StringSubstitutor(values);
 
 		// setup response
 		response.setContentType("text/html");
-		response.setStatus(HttpServletResponse.SC_OK);
+		response.setStatus(SC_OK);
 
 		// output html
 		PrintWriter out = response.getWriter();
