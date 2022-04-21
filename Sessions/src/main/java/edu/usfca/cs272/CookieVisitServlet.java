@@ -145,7 +145,7 @@ public class CookieVisitServlet extends HttpServlet {
 			}
 
 			// update visit date, must URL encode (add < > symbols for demo purposes)
-			String encodedDate = "< " + URLEncoder.encode(today, UTF_8) + " >";
+			String encodedDate = "<" + URLEncoder.encode(today, UTF_8) + ">";
 			response.addCookie(new Cookie(VISIT_DATE, encodedDate));
 		}
 		else {
