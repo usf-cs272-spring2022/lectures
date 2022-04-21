@@ -35,7 +35,7 @@ import jakarta.servlet.http.HttpServletResponse;
  */
 public class CookieVisitServlet extends HttpServlet {
 	/** Class version for serialization, in [YEAR][TERM] format (unused). */
-	private static final long serialVersionUID = 202201;
+	private static final long serialVersionUID = 202210;
 
 	/** Logger for this servlet. */
 	private static final Logger log = LogManager.getLogger();
@@ -150,13 +150,13 @@ public class CookieVisitServlet extends HttpServlet {
 			values.put("disable_on", "disabled");
 		}
 
-		// setup response
-		response.setContentType("text/html");
-		response.setStatus(HttpServletResponse.SC_OK);
-
 		// generate html
 		String template = Files.readString(TEMPLATE_PATH, StandardCharsets.UTF_8);
 		StringSubstitutor replacer = new StringSubstitutor(values);
+
+		// setup response
+		response.setContentType("text/html");
+		response.setStatus(HttpServletResponse.SC_OK);
 
 		// output html
 		PrintWriter out = response.getWriter();
