@@ -12,6 +12,23 @@ import org.eclipse.jetty.servlet.ServletHandler;
  * Read about the "cookie law" on getting consent to store cookies at:
  * <a href="https://gdpr.eu/cookies/">https://gdpr.eu/cookies</a>
  *
+ * <p>
+ * When using cookies, keep in mind the following:
+ *
+ * <ol>
+ * <li>Clearly notify users that cookies are being used and what they store.
+ *
+ * <li>Let users know what happens if they accept or reject those cookies, but
+ * do NOT block access if consent is not given.
+ *
+ * <li>Collect consent BEFORE storing any cookies. Treat the lack of consent as
+ * rejecting cookies.
+ *
+ * <li>Store consent (for documentation purposes) when given.
+ *
+ * <li>Make it easy to change consent at any time.
+ * </ol>
+ *
  * @see CookieVisitServlet
  * @see CookieLandingServlet
  *
